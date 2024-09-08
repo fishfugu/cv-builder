@@ -1,12 +1,24 @@
 [
   {
-    "company": "Example Corp",
-    "role": "Software Engineer",
-    "startDate": "2015-01-01",
-    "endDate": "2020-01-01",
+    "company": "Tech Innovations Ltd",
+    "role": "Senior Software Engineer",
+    "startDate": "2018-07-01",
+    "endDate": "2022-06-30",
     "details": [
-      "Developed APIs using Node.js and Express",
-      "Worked with ElasticSearch and AWS to deploy scalable services"
+      "Led a team of 5 engineers in developing cloud-based applications using Node.js and AWS.",
+      "Architected a scalable microservices platform that handled over 1 million API requests per day.",
+      "Mentored junior developers and conducted code reviews to ensure best practices."
+    ]
+  },
+  {
+    "company": "CodeCraft",
+    "role": "Full-Stack Developer",
+    "startDate": "2015-09-01",
+    "endDate": "2018-06-30",
+    "details": [
+      "Developed front-end applications using Angular and connected them to RESTful APIs.",
+      "Integrated Elasticsearch to build a powerful search functionality for an e-commerce platform.",
+      "Collaborated with UX/UI designers to build responsive and user-friendly web pages."
     ]
   }
 ]
