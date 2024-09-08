@@ -1,0 +1,14 @@
+# Ignore personal experience data
+/src/data/experience.json
+
+# Node modules
+node_modules/
+
+# Log files
+*.log
+
+# Environmental variables (if used)
+.env
+
+# OS-specific files
+.DS_Store
