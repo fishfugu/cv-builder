@@ -1,0 +1,17 @@
+{
+  "name": "cv-builder",
+  "version": "1.0.0",
+  "description": "An iterative tool for generating and managing professional CVs and cover letters, with support for multi-format export (PDF, ODF, Web). Built with Node.js to demonstrate efficient problem-solving and API development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "pdfkit": "^0.15.0"
+  }
+}
