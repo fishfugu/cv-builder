@@ -2,7 +2,7 @@
 
 ## Description
 
-A tool designed to help manage, update, and generate professional CVs and cover letters in multiple formats (PDF, Open Document Format, and HTML). The primary goal: to make it easy to update experience and skills in a centralised datastore and generate outputs that are clean, professional, and ready for use in job applications (rather than keep them in a Word Doc one has to find later and update, fit thr enew information into the right format etc.)
+A tool designed to help manage, update, and generate professional CVs and cover letters in multiple formats (PDF, Open Document Format, and HTML). The primary goal: to make it easy to update experience and skills in a centralised datastore and generate outputs that are clean, professional, and ready for use in job applications (rather than keeping them in a Word Doc that one has to find later and update, fitting new information into the right format, etc.).
 
 This project is built with **Node.js** to demonstrate problem-solving, API development, and experience with modern web technologies.
 
@@ -59,11 +59,34 @@ After working at the ABC for close to 18 years, I began looking to apply for new
 
 5. To export your experience data as a PDF, visit `http://localhost:3000/export/pdf`.
 
+## Managing Personal Data
+
+By default, the repository includes an example experience data file (`experience_example.json`) to demonstrate the functionality of the application. You can create your own experience data file by following these steps:
+
+1. Create a new `experience.json` file in the `src/data/` directory based on the structure provided in `experience_example.json`. For example:
+
+   ```json
+   [
+     {
+       "company": "ABC",
+       "role": "Software Engineer",
+       "startDate": "2006-09-01",
+       "endDate": "Present",
+       "details": [
+         "Developed the ABC Location API using Node.js and AWS.",
+         "Built and scaled the ABC Recommendations Engine using Go and ElasticSearch."
+       ]
+     }
+   ]
+   ```
+
+2. Make sure that the `experience.json` file is excluded from version control by adding it to the `.gitignore` file. This prevents personal information from being committed to the repository.
+
 ## Updating Experience Data
 
 Experience data is stored in a simple JSON format. To update the experience data:
 
-1. Open the `src/data/experience.json` file.
+1. Open the `src/data/experience_example.json` file (or your `experience.json` if you’ve created your own).
 2. Modify the file by adding or updating jobs, roles, dates, and other relevant details. Example structure:
 
    ```json
