@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>My Experience</title>
+</head>
+
+<body>
+    <h1>Experience</h1>
+    <% experience.forEach((job)=> { %>
+        <h2>
+            <%= job.role %> at <%= job.company %>
+        </h2>
+        <p><strong>From:</strong>
+            <%= job.startDate %> to <%= job.endDate %>
+        </p>
+        <ul>
+            <% job.details.forEach((detail)=> { %>
+                <li>
+                    <%= detail %>
+                </li>
+                <% }); %>
+        </ul>
+        <% }); %>
+</body>
+
+</html>

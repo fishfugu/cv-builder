@@ -1,0 +1,12 @@
+[
+  {
+    "company": "Example Corp",
+    "role": "Software Engineer",
+    "startDate": "2015-01-01",
+    "endDate": "2020-01-01",
+    "details": [
+      "Developed APIs using Node.js and Express",
+      "Worked with ElasticSearch and AWS to deploy scalable services"
+    ]
+  }
+]
