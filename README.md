@@ -2,27 +2,20 @@
 
 ## Description
 
-A tool designed to help manage, update, and generate professional CVs and cover letters in multiple formats (PDF, Open Document Format, and HTML). The primary goal: to make it easy to update experience and skills in a centralised datastore and generate outputs that are clean, professional, and ready for use in job applications (rather than keeping them in a Word Doc that one has to find later and update, fitting new information into the right format, etc.).
+A tool designed to help manage, update, and generate professional CVs and cover letters in multiple formats (PDF, LaTeX, and HTML). The primary goal: to make it easy to update experience and skills in a centralised datastore and generate outputs that are clean, professional, and ready for use in job applications.
 
 This project is built with **Node.js** to demonstrate problem-solving, API development, and experience with modern web technologies.
 
 Long-term, the project aims to integrate additional features such as automated cover letter generation based on job descriptions, application tracking, and a web front-end for managing experience data easily.
 
-## Motivation
-
-After working at the ABC for close to 18 years, I began looking to apply for new opportunities. In the process of preparing my applications, I saw an opportunity to automate the process of managing and generating CVs and cover letters, while showcasing my skills as a developer. This tool is designed not only to help with my own job search but also to be a solution that could be useful for others in a similar position. It reflects my focus on:
-
-1. **Iterative Development**: Building solutions step-by-step, improving incrementally with each iteration.
-2. **Efficiency**: Avoiding over-engineered solutions by focusing on simplicity and usability.
-3. **Professionalism**: Clean code, tidy output, and a focus on delivering results efficiently.
-
 ## Features
 
 - Centralised storage of experience data in JSON format.
-- Output formats supported: PDF, HTML, and Open Document Format (coming soon).
-- Dynamic generation of CVs using templating (HTML via EJS).
+- Output formats supported: PDF, HTML, and LaTeX.
+- Dynamic generation of CVs using templating (HTML via EJS, LaTeX).
 - Automated PDF generation using `pdfkit`.
-- Future plans to include:
+- Optional LaTeX-to-PDF conversion support.
+- Future plans:
   - Cover letter generation using AI (based on job descriptions).
   - Application tracking for managing job applications.
   - Web-based front-end for managing experience data.
@@ -59,11 +52,17 @@ After working at the ABC for close to 18 years, I began looking to apply for new
 
 5. To export your experience data as a PDF, visit `http://localhost:3000/export/pdf`.
 
+6. To export your experience data as LaTeX, visit `http://localhost:
+
+3000/export/latex`.
+
+7. To export your LaTeX directly as a PDF (requires LaTeX installed), visit `http://localhost:3000/export/latex/pdf`.
+
 ## Managing Personal Data
 
 By default, the repository includes an example experience data file (`experience_example.json`) to demonstrate the functionality of the application. You can create your own experience data file by following these steps:
 
-1. Create a new `experience.json` file in the `src/data/` directory based on the structure provided in `experience_example.json`. For example:
+1. Create a new `experience.json` file in the `src/data/` directory based on the structure provided in `experience_example.json`. Example:
 
    ```json
    [
@@ -87,7 +86,7 @@ By default, the repository includes an example experience data file (`experience
 Experience data is stored in a simple JSON format. To update the experience data:
 
 1. Open the `src/data/experience_example.json` file (or your `experience.json` if you’ve created your own).
-2. Modify the file by adding or updating jobs, roles, dates, and other relevant details. Example structure:
+2. Modify the file by adding or updating jobs, roles, dates, and other relevant details. Example:
 
    ```json
    [
@@ -113,15 +112,7 @@ The project is a work in progress with several planned features and enhancements
 - **Cover Letter Generator**: Using AI and scraping tools to automatically generate cover letters based on job descriptions.
 - **Web Front-End**: A user-friendly interface built with Angular for managing and updating experience data more easily.
 - **Application Tracker**: Record job applications, track application history, and maintain relevant notes and documents for future reference.
-- **Additional Export Formats**: Support for Open Document Format and other export formats, making it easier to submit applications in various formats.
-
-## Why This Project?
-
-This project was created as a way to both simplify the process of job applications and to showcase my technical skills in an area that aligns with the roles I'm applying for. It offers a real-world use case, with a focus on demonstrating problem-solving, API development, and a clean approach to iterative project development.
-
-### Why Node.js?
-
-While I haven't worked with Node.js extensively in recent years, I wanted to revisit it for this project to demonstrate my adaptability and problem-solving skills with a technology I have experience with. It’s a practical, lightweight tool that fits well with the needs of this project.
+- **Additional Export Formats**: Support for Open Document Format and other export formats.
 
 ## Contributing
 

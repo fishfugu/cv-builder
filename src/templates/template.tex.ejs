@@ -1,0 +1,39 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+\definecolor{headercolor}{RGB}{173,100,82}
+\titleformat{\section}
+{\color{headercolor}\large\bfseries}
+{}{0em}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+\pagestyle{empty}
+\newcommand{\header}[1]{\textbf{\color{headercolor}#1}}
+
+\begin{document}
+
+% Header
+\begin{center}
+{\fontsize{24}{28}\selectfont\bfseries\color{headercolor} Nicholas Gledhill}\\[0.5em]
+Sydney, Australia -- nicholas@creativearts.com.au -- 0419 609 025 \\
+github: \href{https://github.com/fishfugu}{https://github.com/fishfugu}
+\end{center}
+\noindent\rule{\textwidth}{2pt}
+
+\section*{Professional Experience}
+<% experience.forEach((job)=> { %>
+    \header{<%= job.role %>} \hfill \textit{<%= job.startDate %> -- <%= job.endDate %>} \\
+                \textbf{<%= job.company %>}
+                    \begin{itemize}[leftmargin=2em,itemsep=0.3ex]
+                    <% job.details.forEach((detail)=> { %>
+                        \item <%= detail %>
+                            <% }) %>
+                                \end{itemize}
+                                <% }) %>
+
+                                    \end{document}

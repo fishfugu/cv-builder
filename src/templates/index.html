@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>My Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Experience</h1>
+    <% experience.forEach((job)=> { %>
+        <h2>
+            <%= job.role %> at <%= job.company %>
+        </h2>
+        <p><strong>From:</strong>
+            <%= job.startDate %> to <%= job.endDate %>
+        </p>
+        <ul>
+            <% job.details.forEach((detail)=> { %>
+                <li>
+                    <%= detail %>
+                </li>
+                <% }); %>
+        </ul>
+        <% }); %>
+</body>
+
+</html>
