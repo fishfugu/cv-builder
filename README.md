@@ -52,9 +52,7 @@ Long-term, the project aims to integrate additional features such as automated c
 
 5. To export your experience data as a PDF, visit `http://localhost:3000/export/pdf`.
 
-6. To export your experience data as LaTeX, visit `http://localhost:
-
-3000/export/latex`.
+6. To export your experience data as LaTeX, visit `http://localhost:3000/export/latex`.
 
 7. To export your LaTeX directly as a PDF (requires LaTeX installed), visit `http://localhost:3000/export/latex/pdf`.
 
