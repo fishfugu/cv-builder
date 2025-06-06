@@ -1,0 +1,53 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+\definecolor{headercolor}{RGB}{173,100,82}
+\titleformat{\section}
+{\color{headercolor}\large\bfseries}
+{}{0em}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+\pagestyle{empty}
+\newcommand{\header}[1]{\textbf{\color{headercolor}#1}}
+
+\begin{document}
+
+% Header
+\begin{center}
+{\fontsize{24}{28}\selectfont\bfseries\color{headercolor} Nicholas Gledhill}\\[0.5em]
+Sydney, Australia -- nicholas@creativearts.com.au -- 0419 609 025 \\
+github: \href{https://github.com/fishfugu}{https://github.com/fishfugu}
+\end{center}
+\noindent\rule{\textwidth}{2pt}
+
+\section*{Professional Experience}
+
+    \header{Software Engineer} \hfill \textit{2006-09-01 -- Present} \\
+                \textbf{Australian Broadcasting Corporation (ABC)}
+                    \begin{itemize}[leftmargin=2em,itemsep=0.3ex]
+                    
+                        \item Led the development of the ABC&#39;s Recommendations Engine, utilising Go, ElasticSearch, and AWS to provide personalised content recommendations.
+                            
+                        \item Developed and maintained the ABC Location API, using Node.js, ElasticSearch, and AWS Lambda to process geographical data and serve location-based services.
+                            
+                        \item Collaborated with cross-functional teams to deliver scalable and high-performance APIs, enhancing ABC&#39;s digital platforms.
+                            
+                                \end{itemize}
+                                
+    \header{Software Developer (Freelance)} \hfill \textit{2003-01-01 -- 2006-09-01} \\
+                \textbf{Various Freelance Projects}
+                    \begin{itemize}[leftmargin=2em,itemsep=0.3ex]
+                    
+                        \item Provided software development services to a variety of clients, delivering custom web solutions and backend services.
+                            
+                        \item Focused on developing applications using PHP, JavaScript, and HTML/CSS.
+                            
+                                \end{itemize}
+                                
+
+                                    \end{document}
